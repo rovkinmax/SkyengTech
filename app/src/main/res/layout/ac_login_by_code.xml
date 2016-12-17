@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:orientation="vertical">
+
+            <TextView
+                style="?regularText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/login.pass.hint.main"
+                android:textSize="@dimen/text.16" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                style="?regularText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:hint="@string/login.pass.hint.email"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/text.16" />
+
+            <Button
+                android:id="@+id/btnGetCode"
+                style="?buttonBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/login.code.button.request_code"
+                android:textSize="@dimen/text.18" />
+
+            <Button
+                android:id="@+id/btnBack"
+                style="?buttonWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/login.code.button.back" />
+
+            <TextView
+                style="?lightText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="center"
+                android:hint="@string/login.code.hint.footer"
+                android:textSize="@dimen/text.13" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

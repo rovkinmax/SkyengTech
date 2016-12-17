@@ -1,0 +1,23 @@
+ext.versions = [
+        minSdk    : 19,
+        targetSdk : 25,
+        compileSdk: 25,
+        buildTools: '25.0.0',
+
+        services  : '10.0.1',
+        support   : '25.1.0',
+        rxjava    : '2.0.2',
+        retrofit  : '2.1.0',
+
+        junit     : '4.12',
+        mockito   : '2.3.0'
+
+]
+
+ext.libraries = [
+        kotlinStdlib: "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+        rxJava      : "io.reactivex.rxjava2:rxjava:$versions.rxjava",
+
+        junit       : "junit:junit:$versions.junit",
+        mockitoCore : "org.mockito:mockito-core:$versions.mockito",
+]

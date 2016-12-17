@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHeaderHint"
+                style="?regularText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:textSize="@dimen/text.16"
+                tools:text="Введите код (отправлен на телефон +7916*****89)" />
+
+            <EditText
+                android:id="@+id/etCode"
+                style="?regularText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:hint="@string/confirm.hint.code"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textSize="@dimen/text.16" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="?buttonBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/confirm.button.login"
+                android:textSize="@dimen/text.18" />
+
+            <Button
+                android:id="@+id/btnResend"
+                style="?buttonWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/confirm.button.resend" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

@@ -1,0 +1,78 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="regularText">@style/AppTheme.TextView.Regular</item>
+        <item name="mediumText">@style/AppTheme.TextView.Medium</item>
+        <item name="lightText">@style/AppTheme.TextView.Light</item>
+        <item name="buttonBlue">@style/AppTheme.Button.Blue</item>
+        <item name="buttonWhite">@style/AppTheme.Button.White</item>
+    </style>
+
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTitleStyle">@style/AppTheme.Dialog.TitleStyle</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.Dialog.TitleStyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/text.20</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay.Dark" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="AppTheme.AppBarOverlay.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="AppTheme.TextView" parent="AppTheme">
+        <item name="android:textSize">@dimen/text.14</item>
+        <item name="android:textColor">@color/black.333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColorHint">@color/gray.999999</item>
+        <item name="android:drawablePadding">@dimen/padding_medium</item>
+        <item name="colorAccent">@color/black.333333</item>
+        <item name="android:theme">@style/AppTheme.TextView</item>
+    </style>
+
+    <style name="AppTheme.TextView.Regular">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="AppTheme.TextView.Medium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="AppTheme.TextView.Light">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">@dimen/text.16</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.Button.Blue" parent="AppTheme.Button">
+        <item name="android:background">@drawable/button_blue_flat</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.Button.White" parent="AppTheme.Button">
+        <item name="android:background">@drawable/button_white</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:stateListAnimator" tools:ignore="NewApi">@null</item>
+    </style>
+</resources>

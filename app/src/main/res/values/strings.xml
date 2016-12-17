@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SkyengTech</string>
+
+    <string name="error.network">Отсутствует подключение к сети.\nПроверьте соединение и повторите попытку</string>
+    <string name="error.unexpected">Опаньки! Попробуйте выполнить действие позднее.</string>
+
+    <string name="button.cancel">Отмена</string>
+    <string name="button.ok">ОК</string>
+    <string name="loading">Загрузка…</string>
+    <string name="login.title">Вход</string>
+    <string name="login.pass.hint.main">Войдите под вашим аккаунтом в школе\nSkyeng и получите доступ к мобильному\nличному кабинету.</string>
+    <string name="login.pass.hint.footer">Сложный пароль или не хотите искать —\nиспользуйте вход без пароля.</string>
+    <string name="login.pass.hint.email">Электронная почта</string>
+    <string name="login.pass.hint.password">Пароль</string>
+    <string name="login.pass.button.login">Войти</string>
+    <string name="login.pass.button.bycode">Войти без пароля</string>
+
+    <string name="login.code.button.request_code">Получить код для входа</string>
+    <string name="login.code.button.back">Обычный вход с паролем</string>
+    <string name="login.code.hint.footer">Сложный пароль или не хотите искать —\nвойдите по коду. Или используйте обычный\nвход.</string>
+
+    <string name="confirm.button.resend.time">Выслать код повторно (%s)</string>
+    <string name="confirm.button.resend">Выслать код повторно</string>
+    <string name="confirm.button.login">Войти</string>
+    <string name="confirm.hint.code">Код</string>
+    <string name="confirm.hint.header.phone">Введите код (отправлен на телефон %s)</string>
+    <string name="confirm.hint.header.email">Введите код (отправлен на почту %s)</string>
+    <string name="main.button.exit">Выход</string>
+</resources>
