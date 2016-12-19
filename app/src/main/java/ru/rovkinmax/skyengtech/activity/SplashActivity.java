@@ -40,6 +40,7 @@ public class SplashActivity extends AppCompatActivity implements SplashView {
 
     @Override
     public void navigateToMain(@NonNull User user) {
+        RepositoryProvider.initWithToken(getApplicationContext(), user.getToken(), user.getRefreshToken());
         startActivity(MainActivity.makeIntent(this));
     }
 

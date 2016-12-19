@@ -17,6 +17,7 @@ import ru.rovkinmax.skyengtech.R;
 import ru.rovkinmax.skyengtech.dialog.LoadingDialog;
 import ru.rovkinmax.skyengtech.model.User;
 import ru.rovkinmax.skyengtech.presenter.CodeConfirmPresenter;
+import ru.rovkinmax.skyengtech.repository.RepositoryProvider;
 import ru.rovkinmax.skyengtech.rx.RxError;
 import ru.rovkinmax.skyengtech.rx.RxLifecycleProvider;
 import ru.rovkinmax.skyengtech.rx.bindings.RxTextView;
@@ -149,6 +150,7 @@ public final class CodeConfirmActivity extends AppCompatActivity implements Code
 
     @Override
     public void navigateToMain(@NonNull User user) {
+        RepositoryProvider.initWithToken(getApplicationContext(), user.getToken(), user.getRefreshToken());
         startActivity(MainActivity.makeIntent(this));
     }
 }
